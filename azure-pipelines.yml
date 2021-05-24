@@ -20,7 +20,7 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'FilePath'
-    TargetPath: '$(System.DefaultWorkingDirectory)'
+    TargetPath: '$(Build.ArtifactStagingDirectory)'
 
 - script: |
     npm install
