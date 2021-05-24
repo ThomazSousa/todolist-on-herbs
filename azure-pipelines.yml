@@ -19,7 +19,8 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
-    publishLocation: 'Container'
+    publishLocation: 'FilePath'
+    TargetPath: '$(System.DefaultWorkingDirectory)\InnovationInABox-CI\drop\s\build'
 
 - script: |
     npm install
